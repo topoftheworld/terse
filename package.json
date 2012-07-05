@@ -1,8 +1,6 @@
 {
   "name": "terse",
-  "title": "Terse",
-  "description": "Minimal MVC",
-  "version": "0.1.0-beta",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/breerly/terse.git"
@@ -16,5 +14,7 @@
   },
   "scripts": {
     "test": "mocha"
-  }
+  },
+  "ender": "./src/ender.js",
+  "main": "./src/terse.js"
 }

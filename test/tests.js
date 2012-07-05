@@ -1,11 +1,18 @@
 var assert = require("assert")
 var should = require("should")
+var terse = require("../src/terse")
+
+describe('terse', function(){
+
+    describe('#sayWoot', function(){
+        it('should return w00t', function() {
+            assert.equal('w00t', terse.sayWoot())
+        })
+    })
+})
 
 
-//
-// mocha test with assert
-//
-
+/*
 describe('Array', function(){
   describe('#indexOf()', function(){
     it('should return -1 when the value is not present', function(){
@@ -14,11 +21,6 @@ describe('Array', function(){
     })
   })
 })
-
-//
-// mocha test with should
-//
-
 describe('Array', function(){
   describe('#indexOf()', function(){
     it('should return -1 when the value is not present', function(){
@@ -27,3 +29,4 @@ describe('Array', function(){
     })
   })
 })
+*/
