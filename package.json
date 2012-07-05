@@ -19,6 +19,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "engines": {
+    "node": ">=0.6.0 <0.9"
+  },
   "ender": "./src/ender.js",
   "main": "./src/terse.js"
 }
