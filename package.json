@@ -1,7 +1,10 @@
 {
   "name": "terse",
   "version": "0.1.0",
-  "email": "breerly@gmail.com",
+  "authors": [
+    "Grayson Koonce <breerly@gmail.com> (https://github.com/breerly)",
+    "Sagar Vashishta <sagar@shadowtracer.com> (https://github.com/topoftheworld)"
+  ]
   "repository": {
     "type": "git",
     "url": "https://github.com/breerly/terse.git"
