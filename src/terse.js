@@ -1,29 +1,28 @@
 (function (context){
 
-    var controllerName = '';
-    var actionName = '';
-    var params = {};
+    var controllerName = ''
+    var actionName = ''
+    var params = {}
 
-    createLocation = function (options) {
+    context.createLocation = function (options) {
 
-        controllerName = options.controller;
-        actionName = options.action;
-        params = options.params;
+        controllerName = options.controller
+        actionName = options.action
+        params = options.params
 
         return {
             getControllerName: function() {
-                return controllerName;
+                return controllerName
             },
 
             getActionName: function() {
-                return actionName;
+                return actionName
             },
 
             getParams: function() {
-                return params;
+                return params
             }
         }
-    };
-    context.createLocation = createLocation;
+    }
 
-})(this);
+})(this)
