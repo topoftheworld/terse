@@ -1,32 +1,41 @@
 var assert = require("assert")
 var should = require("should")
+var _ = require("underscore")
 var terse = require("../src/terse")
+
 
 describe('terse', function(){
 
-    describe('#sayWoot', function(){
-        it('should return w00t', function() {
-            assert.equal('w00t', terse.sayWoot())
+    describe('#createLocation', function() {
+
+        describe('#getControllerName', function() {
+            it('should return index', function() {
+                var location = terse.createLocation({
+                    'controller': 'index'
+                })
+                assert.equal(location.getControllerName(), 'index')
+            })
+        })
+
+        describe('#getActionName', function() {
+            it('should return get', function() {
+                var location = terse.createLocation({
+                    'action': 'get'
+                })
+                assert.equal(location.getActionName(), 'get')
+            })
+        })
+
+        describe('#getParams', function() {
+            it('should return params', function() {
+                var params = {'test': 'bob'}
+                var location = terse.createLocation({
+                    'params': params
+                })
+
+                assert.equal(params, location.getParams())
+            })
         })
     })
-})
 
-
-/*
-describe('Array', function(){
-  describe('#indexOf()', function(){
-    it('should return -1 when the value is not present', function(){
-      assert.equal(-1, [1,2,3].indexOf(5));
-      assert.equal(-1, [1,2,3].indexOf(0));
-    })
-  })
 })
-describe('Array', function(){
-  describe('#indexOf()', function(){
-    it('should return -1 when the value is not present', function(){
-      [1,2,3].indexOf(5).should.equal(-1);
-      [1,2,3].indexOf(0).should.equal(-1);
-    })
-  })
-})
-*/

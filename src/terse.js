@@ -1,11 +1,29 @@
 (function (context){
 
-    context.terse = function() {
-        return 'w00t'
-    }
+    var controllerName;
+    var actionName;
+    var params;
 
-    context.sayWoot = function() {
-        return 'w00t';
-    }
+    createLocation = function (options) {
+
+        controllerName = options.controller;
+        actionName = options.action;
+        params = options.params;
+
+        return {
+            getControllerName: function() {
+                return controllerName;
+            },
+
+            getActionName: function() {
+                return actionName;
+            },
+
+            getParams: function() {
+                return params;
+            }
+        }
+    };
+    context.createLocation = createLocation;
 
 })(this);
