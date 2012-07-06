@@ -12,7 +12,7 @@ describe('terse', function(){
                 var location = terse.createLocation({
                     'controller': 'index'
                 })
-                assert.equal(location.getControllerName(), 'index')
+                location.getControllerName().should.equal("index")
             })
         })
 
@@ -21,7 +21,7 @@ describe('terse', function(){
                 var location = terse.createLocation({
                     'action': 'get'
                 })
-                assert.equal(location.getActionName(), 'get')
+                location.getActionName().should.equal('get')
             })
         })
 
@@ -31,10 +31,8 @@ describe('terse', function(){
                 var location = terse.createLocation({
                     'params': params
                 })
-
-                assert.equal(params, location.getParams())
+                location.getParams().should.equal(params)
             })
         })
     })
-
 })
