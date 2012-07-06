@@ -1,8 +1,8 @@
 (function (context){
 
-    var controllerName;
-    var actionName;
-    var params;
+    var controllerName = '';
+    var actionName = '';
+    var params = {};
 
     createLocation = function (options) {
 

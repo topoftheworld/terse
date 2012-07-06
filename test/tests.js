@@ -1,6 +1,5 @@
 var assert = require("assert")
 var should = require("should")
-var _ = require("underscore")
 var terse = require("../src/terse")
 
 
