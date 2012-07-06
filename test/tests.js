@@ -12,7 +12,7 @@ describe('terse', function(){
                 var location = terse.createLocation({
                     'controller': 'index'
                 })
-                location.getControllerName().should.equal("index")
+                location.getControllerName().should.equal('index')
             })
         })
 

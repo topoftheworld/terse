@@ -1,7 +1,8 @@
 (function ($) {
-  var terse = require('terse');
+  var terse = require('terse')
 
   $.ender({
     terse: terse
-  });
-}(ender));
+  })
+
+}(ender))
